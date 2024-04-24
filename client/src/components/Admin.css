@@ -1,0 +1,51 @@
+/* Admin.css */
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../../public/images/adminbg.jpg'); 
+  background-size: cover;
+  background-position: 0%;
+}
+
+.admin-sidebar {
+  text-align: center;
+}
+
+.admin-sidebar h2 {
+  font-family: monospace;
+  font-size: 80px;
+  color: white;
+}
+
+.admin-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.admin-button, .adminbuttonn {
+  margin-bottom: 20px;
+}
+
+.admin_btn {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 350px;
+  height: 50px;
+  font-size: large;
+}
+
+.admin_btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}

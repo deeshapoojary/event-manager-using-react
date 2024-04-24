@@ -12,7 +12,7 @@ const Dashboard = () => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/club_events?organizer=${clubName}`
+          `http://localhost:5000/club_events/organizer=${clubName}`
         );
         setEvents(response.data);
       } catch (error) {
@@ -53,8 +53,13 @@ const Dashboard = () => {
       <Link to="/Organize">
         <button className="organize-btn">Organise an Event!</button>
       </Link>
-      <div className="events">
-        <h2>Events for {clubName}</h2>
+      <div className="buttonn">
+      <Link to="/Email_Extract">
+        <button className="organize-btn">Send Invites</button>
+      </Link>
+      <Link to="/Email_Extract">
+        <button className="organize-btn">Upload Attendance</button>
+      </Link>
       </div>
       <div className="card">
         <EventCardItem events={events} />

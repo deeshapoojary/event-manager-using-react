@@ -12,7 +12,7 @@ function Organizer() {
     eventTime: '',
     seatsAvailable: '',
     bookingLink: '',
-    selectedClub: '' // Added selectedClub state
+   // Added selectedClub state
   });
 
   const handleChange = (e) => {
@@ -27,13 +27,13 @@ function Organizer() {
     const { value } = e.target;
     setFormData({
       ...formData,
-      selectedClub: value
+      organizer: value
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.selectedClub) {
+    if (!formData.organizer) {
       alert('Please select a club');
       return;
     }
@@ -48,8 +48,7 @@ function Organizer() {
         eventDate: '',
         eventTime: '',
         seatsAvailable: '',
-        bookingLink: '',
-        selectedClub: ''
+        bookingLink: ''
       });
     } catch (error) {
       console.error('Error submitting data:', error);
@@ -61,11 +60,11 @@ function Organizer() {
       <div className="form-container-inside">
         <h1>Organize An Event!</h1>
         <form onSubmit={handleSubmit}>
-        <label htmlFor="selectedClub">Select Club:</label>
+        <label htmlFor="organizer">Select Club:</label>
           <select
-            id="selectedClub"
-            name="selectedClub"
-            value={formData.selectedClub}
+            id="organizer"
+            name="organizer"
+            value={formData.organizer}
             onChange={handleClubChange}
             required
           >

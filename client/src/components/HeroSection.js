@@ -36,9 +36,9 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          anchor='./Register'
+          anchor='./Adlogin'
         >
-          Register <i className='far fa-id-card' />
+          Admin <i className='far fa-id-card' />
         </Button>
       </div>
     </div>

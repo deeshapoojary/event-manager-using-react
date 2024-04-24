@@ -149,7 +149,7 @@ app.post('/login', async (req, res) => {
 
 // Organizer Schema
 const dataSchema = new mongoose.Schema({
-  organizer: String,
+  organizer:String,
   eventName: String,
   eventDescription: String,
   eventVenue: String,

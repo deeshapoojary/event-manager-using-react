@@ -14,7 +14,7 @@
   }
   
   .organize-btn:hover {
-    background-color: #7992f7;
+    background-color: #b9c3e8;
   }
   
   .dashboard-left {
@@ -65,3 +65,13 @@
     overflow-y: auto; /* Add scrollbars if needed */
   }
   
+  .buttonn{
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 28%;
+    left: 28px;
+    width: 200px;
+    white-space: nowrap;
+  }
